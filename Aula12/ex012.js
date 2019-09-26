@@ -1,11 +1,13 @@
-var horaAtual = new Date();
-var hora = horaAtual.getHours;
-console.log(`Agora são exatamente ${hora} horas.`)
-if (hora <12){
-    console.log("Bom Dia!")
+let agora = new Date();
+let hora = agora.getHours();
+let minutos =  agora.getMinutes();
+
+console.log(`Agora são exatamente ${hora}:${minutos} horas.`);
+
+if(hora <12) {
+    console.log('Bom dia!')
 } else if (hora <18) {
-    console.log("Boa tarde!")
-} else {
-    console.log("Boa noite!")
-} //alteração de teste do vscode
-var teste = "vscode";
+    console.log('Boa Tarde!')
+}else {
+    console.log('Boa noite!')
+}
